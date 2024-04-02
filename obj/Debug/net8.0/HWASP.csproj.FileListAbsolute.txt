@@ -28,3 +28,4 @@ D:\2. ШАГ Уроки\4. Видео ШАГ С++\15. ASP.NET\1. 23.03.2024\HW\H
 D:\2. ШАГ Уроки\4. Видео ШАГ С++\15. ASP.NET\1. 23.03.2024\HW\HWASP\HWASP\obj\Debug\net8.0\HWASP.pdb
 D:\2. ШАГ Уроки\4. Видео ШАГ С++\15. ASP.NET\1. 23.03.2024\HW\HWASP\HWASP\obj\Debug\net8.0\HWASP.genruntimeconfig.cache
 D:\2. ШАГ Уроки\4. Видео ШАГ С++\15. ASP.NET\1. 23.03.2024\HW\HWASP\HWASP\obj\Debug\net8.0\ref\HWASP.dll
+D:\2. ШАГ Уроки\4. Видео ШАГ С++\15. ASP.NET\1. 23.03.2024\HW\HWASP\HWASP\obj\Debug\net8.0\HWASP.sourcelink.json

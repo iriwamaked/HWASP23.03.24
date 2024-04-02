@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HWASP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01f19425a551495502b1af226fbc61b659814382")]
 [assembly: System.Reflection.AssemblyProductAttribute("HWASP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HWASP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

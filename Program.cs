@@ -1,7 +1,10 @@
+using HWASP.Services.RandomServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IRandomService, RandomService>();
 
 var app = builder.Build();
 
@@ -22,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Registration}/{id?}");
+    pattern: "{controller=Home}/{action=Random}/{id?}");
 
 app.Run();

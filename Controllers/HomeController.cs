@@ -1,4 +1,5 @@
 using HWASP.Models;
+using HWASP.Services.RandomServices;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,9 +9,11 @@ namespace HWASP.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IRandomService _rndService;
+        public HomeController(ILogger<HomeController> logger, IRandomService rndService)
         {
             _logger = logger;
+            _rndService = rndService;
         }
 
         public IActionResult Index()
@@ -29,6 +32,17 @@ namespace HWASP.Controllers
             {
                 PageTitle = "Registration",
                 FormModel = formModel != null ? formModel : new RegistrationFormModel()
+            };
+            return View(model);
+        }
+
+        public ViewResult Random()
+        {
+            RandomServiceTestPageModel model = new()
+            {
+                code = _rndService.GenerateConfirmationCode(),
+                salt = _rndService.GenerateCryptoSalt(),
+                fileName = _rndService.GenerateRandomFileName()
             };
             return View(model);
         }
