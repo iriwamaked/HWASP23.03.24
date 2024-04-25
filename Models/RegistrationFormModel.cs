@@ -4,9 +4,22 @@ namespace HWASP.Models
 {
     public class RegistrationFormModel
     {
-        [FromForm (Name = "signup-username")] 
-        public String UserName { get; set; }
-        [FromForm(Name = "signup-password")]
-        public String Password { get; set; }
+        [FromForm(Name = "user-name-signup")]
+        public String UserName { get; set; } = null!;
+
+        [FromForm (Name = "user-email-signup")]
+        public String UserEmail {  get; set; }=null!;
+
+        [FromForm(Name = "user-password-signup")]
+        public String Password { get; set; }=null!;
+
+        [FromForm(Name = "user-password-signup-repeat")]
+        public String PasswordRepeat { get; set; }=null!;
+
+        [FromForm(Name = "user-birthday")]
+        public DateTime? Birthdate { get; set; } = null!;
+
+        [FromForm(Name = "signup-confirm")]
+        public bool Confirm { get; set; }
     }
 }
